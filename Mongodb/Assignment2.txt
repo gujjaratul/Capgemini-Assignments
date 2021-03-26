@@ -1,0 +1,28 @@
+Assignment-2
+
+Section1
+
+1) db.zipcodes.find({“city”:”ATLANTA”,”state”:”GA”}).pretty()
+2)db.zipcodes.aggregate([{$match:{city:”ATLANTA”,state:”GA”}}])
+3) db.zipcodes.aggregate([{$match:{city:”ATLANTA”}},{$group:{_id:”city”,count:{$sum:1}}}])
+4) db.zipcodes.aggregate([{$match:{city:”ATLANTA”}},{$group:{_id:”city”,count:{$sum:”pop”}}])
+
+Section2
+
+1)db.zipcodes.aggregate([{$group:{_id:”$state”,total:{$sum:”$pop”}}}])
+2) db.zipcodes.aggregate([{$group:{_id:”$state”,total:{$sum:”$pop”}}},{$sort:{total:1}}])
+3) db.zipcodes.aggregate([{$group:{_id:”$state”,tpop:{$sum:”$pop”}}},{$sort:{total:1}}{$limit:3}])
+
+Section3
+
+1) db.zipcodes.aggregate([{$group:{_id:{state:”$state”,city:”$city”},count:{$sum:”$pop”}}}])
+
+2) db.zipcodes.aggregate([{$group:{_id:{state:”$state”,city:”$city”},count:{$sum:”$pop”}}},{$sort:{count:-1}}])
+
+3) db.zipcodes.aggregate([{$group:{_id:{state:”$state”,city:”$city”},count:{$sum:”$pop”}}},{$sort:{count:-1}},{$limit:3}])
+4) db.zipcodes.aggregate([{$group:{_id:{state:”TX”,city:”$city”},count:{$sum:”$pop”}}},{$sort:{count:-1}},{$limit:3}])
+
+
+
+
+
