@@ -49,7 +49,7 @@ a:hover{
     color:rgb(255, 153, 0)
 }
 #fourth{
-    background-image: url("cam.png");
+    background-image: url("/images/cam.png");
     background-position: center;
     background-repeat: no-repeat;
     height: 50vh;

@@ -1,5 +1,5 @@
 .num1{
-    background-image: url("kedarnath.jpg");
+    background-image: url("/images/kedarnath.jpg");
 
   /* Set a specific height */
   min-height: 100%; 
@@ -34,7 +34,7 @@
 }
 .num3{
     
-    background-image: url("badri.jpg");
+    background-image: url("/images/badri.jpg");
 
   /* Set a specific height */
   min-height: 100%; 
@@ -56,7 +56,7 @@ li{
     font-family: "Lato" sans-serif;
 }
 .num4{
-    background-image: url("alk.jpg");
+    background-image: url("/images/alk.jpg");
     min-height: 100%; 
     background-attachment: fixed;
     background-position: center;
