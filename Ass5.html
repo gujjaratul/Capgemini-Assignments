@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Js5.css">
+    </head>
+    <body>
+        <label for="nm">Name:</label>
+        <input type="text" name="nm" id="nm" required><br><br>
+        <label for="em">Email:</label>
+        <input type="email" name="em" id="em" required>
+
+
+        <h2>Toppings:</h2>
+        <label for="ch1">Extra Cheese:</label>
+        <input type="checkbox" name="top" id="ch1" value="Extra Cheese">
+        <label for="ch2">Pepperonl:</label>
+        <input type="checkbox" name="top" id="ch2" value="Pepperonal">
+        <label for="ch3">Olives:</label>
+        <input type="checkbox" name="top" id="ch3" value="Olives">
+        <label for="ch4">Pepper:</label>
+        <input type="checkbox" name="top" id="ch4" value="Pepper">
+        <label for="ch5">Bacon:</label>
+        <input type="checkbox" name="top" id="ch5" value="Bacon">
+        <label for="ch6">Tomatos:</label>
+        <input type="checkbox" name="top" id="ch6" value="Tomatos">
+        <label for="ch7">Mashrooms:</label>
+        <input type="checkbox" name="top" id="ch7" value="Mashromms">
+
+
+
+
+        <p>How do you want your pizza ! </p>
+        <input type="radio" id="deliver" name="way" value="Delivery">
+        <label for="deliver">Delivery</label>
+        <input type="radio" id="pick" name="way" value="Pickup">
+        <label for="pick">Pickup</label><br><br>
+
+
+
+        <label for="tip">Tip?</label>
+        <select name="tip" id="car">
+        <option value="15%" id="onefive">15%</option>
+        <option value="20%" id="tweenty">20%</option>
+        <option value="25%" id="five">25%</option>
+    </select><br><br><br>
+
+
+    <label for="add">Address</label><br>
+    <textarea name="add" id="text1" cols="50" rows="10"></textarea>
+    <br>
+
+
+    <button>Submit</button>
+        <button>Reset</button>
+        <button onclick="acceptInput()" id="btn">Show Summary</button>
+
+
+
+
+        <table id="resultTable" border="1">
+            <tr>
+              <th>
+              Full Name:
+              </th>
+              <td>
+                  <input type="text" name="FullName2" id="fname2" readonly>
+              </td>
+              </tr>
+              <tr>
+              <th>
+              Email:
+              </th>
+              <td>
+                  <input type="text" name="MemberID2" id="em2" readonly>
+              </td>
+            </tr>
+            
+              <tr>
+                  <th>
+                      Address:
+                  </th>
+                  <td>
+                      <input type="text" name="add1" id="text2" readonly >
+                  </td>
+              </tr>
+
+
+              <tr>
+                <th>Topings:
+                </th>
+                <td input type="text" id="cheek" >
+                
+                </td>
+                </tr>   
+
+
+
+              <tr>
+                <th>Delivery
+                </th>
+                <td input type="text" id="disp" >
+                
+                </td>
+                </tr>              
+
+                <tr>
+                    <th>
+                        Tip Amount
+                    </th>
+                    <td>
+                        <span class="output"></span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>
+                        Total
+                    </th>
+                    <td><input type="number" id="price"></td>
+                </tr>
+                
+
+        <script src="Ass5.js"></script>
+        
+    </body>
+</html>
